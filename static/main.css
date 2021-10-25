@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+#shareLocation {
+    position: absolute;
+    display: inline;
+    right: 0;
+
+    margin-top: 2vh;
+    margin-right: 2vw;
+
+    height: 50px;
+    padding: 7px;
+
+    border: 0;
+    border-radius: 10px;
+    background-color: wheat;
+
+    z-index: 9999; /* Era necesario, Leaflet usa z-index, poner el mapa a -1 lo hacía inútil, y poner el botón en 1 hacía que una imagen del mapa lo tapara con frecuencia */
+}
+
+#shareLocation:hover {
+    background-color: #f5bbaa;
+}
+
+#shareLocation:active {
+    background-color: #dddeb1;
+}
